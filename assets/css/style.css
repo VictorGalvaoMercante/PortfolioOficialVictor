@@ -1,0 +1,168 @@
+body {
+    height: 100vh;
+  
+    
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    z-index: 2;
+
+    & h2 {
+        color: white;
+        font-size: 30px;
+        margin-left: 3%;
+        font-weight: 500;
+        font-family: 'League Gothic', sans-serif;
+        letter-spacing: 6px;
+    }
+
+    & a {
+        color: white;
+        padding: 10px;
+        transition: 0.5s;
+        cursor: pointer;
+        border-radius: 20px;
+        font-size: 26px;
+        font-weight: 400;
+       
+        letter-spacing: 1px;
+        font-family: 'League Gothic', sans-serif;
+
+        &:hover {
+            background-color: rgb(30, 255, 0);;
+            color: black;
+
+        }
+    }
+
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(100deg, rgb(0, 0, 0) 50%,#f4f4f4 50%);
+    background-attachment: fixed;
+}
+
+.containerMe {
+    height: 100vh;
+    align-items: center;
+    top: 50%;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    
+    
+}
+
+.sectionMe {
+    position: absolute;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    top: 50%;
+    padding-left: 50px;
+    align-items: center;
+   
+}
+
+.name {
+    font-weight: bold;
+    font-size: 26pt;
+  
+
+}
+.font{
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: rgb(30, 255, 0);
+  
+}
+.dev{
+    color: white;
+    text-shadow: 2px 1px rgb(0, 0, 0);
+    text-align: center;
+   
+    text-align: center;
+    width: 700px;
+}
+
+.img1 {
+    width: 700px;
+    margin-top: 100px;
+    animation: flutuar 3s ease-in-out infinite; 
+}
+
+/*efeito de flutuar */
+@keyframes flutuar {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-20px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
+
+.name p:first-child {
+    font-size: 40px; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    border-right: 3px solid rgb(255, 255, 255); 
+    width: 0; 
+    animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite; 
+}
+
+/* Efeito de digitação */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.btn{
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px white;
+    background-color: black;
+    color: rgb(30, 255, 0);
+    transition: 0.5s;
+    border: 1px solid white;
+    }
+.btnS{
+    margin-left: 100px;
+    margin-top: 30px;
+    
+}
+
+.btn:hover{
+    box-shadow: 3px 3px 20px white;
+    transform:scale(1.1);
+    color:rgb(255, 255, 255);
+}
+
+
+
