@@ -29,8 +29,8 @@
 
 .card {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 15%;
+    height: 35vh;
     background: linear-gradient(135deg, rgb(30, 255, 0), rgb(23, 138, 8));
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -108,3 +108,23 @@
         font-size: 1rem;
     }
 }
+
+.description-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.description-text {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+
